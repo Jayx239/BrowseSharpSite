@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BrowseSharp</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#ffc40d">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/bootstrap-reboot.css">
+    <link rel="stylesheet" href="css/browse-sharp.css">
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/release.js"></script>
+    <script>
+        $(document).ready(function() {
+            var switcher = releaseSwitcher("/data/ReleaseNotes.json",$(".container.version-content"));
+            $("#VersionDropdownList .dropdown-item").click(function() {
+                var index = $(this).data("index");
+                switcher.Switch(index);
+            });
+            switcher.CreateDropdownItems($("#VersionDropdownList"));
+        });
+    </script>
+
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="index.html"><img class="home-icon" src="img/BrowseSharp.svg"/></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://jayx239.github.io/BrowseSharp/">API</a>
+                </li>
+
+                <li class="nav-item active">
+                    <a class="nav-link" href="releases.html">Releases</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="feedback.html">Feedback</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<main role="main">
+    <div class="container container-fluid mt-4">
+        <div class="container">
+            <div class="row">
+                <h3 class="mt-4">Releases</h3>
+            </div>
+            <div class="row align-items-center download-links">
+                <div class="col-12 col-sm-3 col-md-2 align-center">
+                    Get it on:
+                </div>
+                <div class="col-12 col-sm-9 col-md-10 align-self-right"><a href="https://github.com/Jayx239/BrowseSharp/releases"><img
+                        src="img/GitHub_Logo.png"
+                        class="github-img"/></a>
+                    <div class="pipe">|</div>
+                    <a href="https://www.nuget.org/packages/BrowseSharp" rel="nofollow"><img
+                            src="https://camo.githubusercontent.com/643dcdb74951dcf6efe76ee6c49da9a52531f9e7/68747470733a2f2f696d672e736869656c64732e696f2f6e756765742f762f42726f77736553686172702e737667"
+                            alt="NuGet" data-canonical-src="https://img.shields.io/nuget/v/BrowseSharp.svg"
+                            style="max-width:100%;"></a>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="mt-4">
+
+                </div>
+            </div>
+            <div class="card h-100 release-notes">
+                <div class="card-header">
+                    <div class="row align-items-center">
+                        <h4 class="col-12 col-sm-6">Release Notes</h4>
+                        <div class="dropdown col-12 col-sm-6">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="versionDropdownButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Release Version
+                            </button>
+                            <div id="VersionDropdownList" class="dropdown-menu" aria-labelledby="versionDropdownButton">
+                                <a class="dropdown-item" href="#004-beta">0.0.4-beta</a>
+                                <a class="dropdown-item" href="#0004-alpha">0.0.4-alpha</a>
+                                <a class="dropdown-item" href="#003">0.0.3</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="container version-content">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer class="bd-footer text-muted">
+    <div class="container-fluid p-3 p-md-5">
+        <ul class="bd-footer-links">
+            <li><a href="https://github.com/Jayx239/BrowseSharp">GitHub</a></li>
+            <li><a href="https://www.nuget.org/packages/BrowseSharp/">Nuget</a></li>
+        </ul>
+        <p>Code Licensed <a href="https://github.com/Jayx239/BrowseSharp/blob/master/LICENSE">MIT</a></p>
+    </div>
+</footer>
+</body>
+</html>
