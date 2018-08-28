@@ -183,6 +183,28 @@
           "url": "https://www.nuget.org/packages/BrowseSharp/0.0.4-beta"
         }
       ]
+    },{
+      "name": "0.0.4",
+      "displayName": "Version 0.0.4",
+      "notesHtml": "<ul><li>Added request uri to Document object.</li><li>Fixed bug with history management methods where request uri was not being set properly causing the previous url to be used in the request.</li><li>Added Browse History Management Methods</li></ul><ul><li>Clear Histroy</li><li>Back</li><li>Forward</li><li>Set max history size</li></ul><ul><li>Updated Navigate and Submit methods to manage history</li></ul><ul><li>Note: Standard web request methods do not manage history currently, if you want history management to work properly stick to using the navigate and submit methods</li></ul><ul><li>Added the ability to disable javascript scraping and style scraping</li></ul>",
+      "downloadLinks": [
+        {
+          "name": "GitHub",
+          "imgUrl": "img/GitHub_Logo.png",
+          "class": "github",
+          "displayText": "GitHub",
+          "useImage": "true",
+          "url": "https://github.com/Jayx239/BrowseSharp/tree/0.0.4"
+        },
+        {
+          "name": "Nuget",
+          "imgUrl": "img/nuget-logo.svg",
+          "class": "nuget",
+          "displayText": "Nuget",
+          "useImage": "true",
+          "url": "https://www.nuget.org/packages/BrowseSharp/0.0.4"
+        }
+      ]
     }
   ]
 }
