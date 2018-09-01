@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>BrowseSharp</title>
     <meta name="description" content="A headless browser for C#">
-    <meta name="keywords" content="home,browse sharp,sharp browser,browser sharp,HTML,CSS,JavaScript,Headless,Headless Browser,Browser,BrowseSharp,BrowseSharp.org,BrowseSharp.com,Jint,RestSharp,AngleSharp,Nuget,Github,C#,CSharp">
+    <meta name="keywords" content="releases,browse sharp,sharp browser,browser sharp,HTML,CSS,JavaScript,Headless,Headless Browser,Browser,BrowseSharp,BrowseSharp.org,BrowseSharp.com,Jint,RestSharp,AngleSharp,Nuget,Github,C#,CSharp">
     <meta name="author" content="Jason Gallagher">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
@@ -22,7 +22,7 @@
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-
+    <script src="js/release.js"></script>
 
 </head>
 <body>
@@ -35,7 +35,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
@@ -51,7 +51,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href="feedback.html">Feedback</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item active">
                     <div class="dropdown">
                         <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Test Sites
@@ -70,66 +70,35 @@
     <div class="container container-fluid mt-4">
         <div class="container">
             <div class="row">
-                <h3 class="mt-4">Welcome to BrowseSharp!</h3>
+                <h3 class="mt-4">Form Test Page</h3>
             </div>
-            <div class="row mt-4">
-
-                <div class="col-lg-10 col-md-9 col-xs-11 mt-4">
-                    <p>
-                        BrowseSharp is an open source headless browser implementation for c#.
-                        The browser is built on top of the RestSharp HTTP client, Jint JavaScript engine, and
-                        AngleSharp.
-                        BrowseSharp allows easy navigation of the web giving users quick access to
-                        javascript files and css styles for each request. BrowseSharp is Ideal for web scraping with
-                        support
-                        for css querying of elements, and the ability to execute javascript.
-                    </p>
-                </div>
-
-                <div class="col-lg-2 col-md-3">
-                    <img class="bsharp-img" src="img/BrowseSharp.png"/>
+            <div class="row">
+                <div class="col-12 col-sm-6 mt-4">
+                    <label>Logon Form</label>
+                    <form action="https://www.requesttester.com/tester" method="post">
+                        <div class="form-group"><input type="text" name="UserName" placeholder="UserName"/></div>
+                        <div class="form-group"><input type="password" name="Password" placeholder="Password"/></div>
+                        <div class="form-group"><button type="submit">Submit</button></div>
+                    </form>
                 </div>
             </div>
-            <div class="row mt-4">
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="card h-100">
-                        <div class="card-header">
-                            <h4>Web Requests</h4>
+            <div class="row">
+                <div class="col-12 mt-4">
+                    <label>Rating Form</label>
+                    <form action="https://www.requesttester.com/tester" method="get">
+                        <div class="form-group"><textarea type="text" name="Message" placeholder="Message"></textarea></div>
+                        <div class="form-group"><input type="email" name="Email" placeholder="Email"/></div>
+                        <div class="form-group">
+                            <select name="Rating">
+                                <option name="Rating" value="1">1</option>
+                                <option name="Rating" value="2">2</option>
+                                <option name="Rating" value="3">3</option>
+                                <option name="Rating" value="4">4</option>
+                                <option name="Rating" value="5">5</option>
+                            </select>
                         </div>
-                        <div class="card-body">
-                            <p>BrowseSharp is all about navigating the web. It makes it simple and easy to navigate the
-                                web
-                                and submit forms.</p>
-                            <p>With each request, BrowseSharp packages a document containing all external and inline
-                                javascript as well as all external and
-                                inline css styles.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="card h-100">
-                        <div class="card-header">
-                            <h4>Javascript Execution</h4>
-                        </div>
-                        <div class="card-body">
-                            <p>On top of scraping all javascript from each web request, BrowseSharp also gives you the
-                                ability to execute javascript.
-                                This is very useful in scenarios when websites store data in javascript json
-                                objects.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 mb-4">
-                    <div class="card h-100">
-                        <div class="card-header">
-                            <h4>Html Parsing</h4>
-                        </div>
-                        <div class="card-body">
-                            <p>The ability to parse html documents is critical for any headless browser. BrowseSharp
-                                utilizes the AngleSharp parsing library to allow users to
-                                write css querys for parsing html dom elements.</p>
-                        </div>
-                    </div>
+                    <button type="submit">Submit</button>
+                    </form>
                 </div>
             </div>
         </div>
