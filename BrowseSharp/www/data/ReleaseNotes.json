@@ -205,6 +205,28 @@
           "url": "https://www.nuget.org/packages/BrowseSharp/0.0.4"
         }
       ]
+    },{
+      "name": "0.0.5-alpha",
+      "displayName": "Version 0.0.5-alpha",
+      "notesHtml": "<p>Features:</p><ul><li>Added Form model for storing form data</li><li>Added SubmitForm methods to browser for submitting the new Form model.</li><li>Added logic for scraping forms from each response and store it in a Document.</li><li>Added additional attributes to Document for easier access.</li></ul><p>Bug fixes:</p><ul><li>Fixed bug with UriHelper that was causing Uri's to be created incorrectly. Caused relative path script and css file links to  be constructed incorrectly, resulting in these files not being retrieved properly and invalid requests to being made.</li></ul>",
+      "downloadLinks": [
+        {
+          "name": "GitHub",
+          "imgUrl": "img/GitHub_Logo.png",
+          "class": "github",
+          "displayText": "GitHub",
+          "useImage": "true",
+          "url": "https://github.com/Jayx239/BrowseSharp/releases/tag/0.0.5-alpha"
+        },
+        {
+          "name": "Nuget",
+          "imgUrl": "img/nuget-logo.svg",
+          "class": "nuget",
+          "displayText": "Nuget",
+          "useImage": "true",
+          "url": "https://www.nuget.org/packages/BrowseSharp/0.0.5-alpha"
+        }
+      ]
     }
   ]
 }
