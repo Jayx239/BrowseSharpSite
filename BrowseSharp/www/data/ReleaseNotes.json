@@ -227,6 +227,28 @@
           "url": "https://www.nuget.org/packages/BrowseSharp/0.0.5-alpha"
         }
       ]
+    },{
+      "name": "0.0.5-beta",
+      "displayName": "Version 0.0.5-beta",
+      "notesHtml": "<ul><li><p>Updated browser submit and navigate methods to accept uri strings that do not contain a protocol. IE: you can pass www.google.com into the submit and navigate methods and it will automatically append the default protocol. The default protocol is set to http but can be set manually.</p></li><li><p>Updated UriHelper to have the Uri method which handles pre-pending the protocol to a uri if it is not present.</p></li></ul>",
+      "downloadLinks": [
+        {
+          "name": "GitHub",
+          "imgUrl": "img/GitHub_Logo.png",
+          "class": "github",
+          "displayText": "GitHub",
+          "useImage": "true",
+          "url": "https://github.com/Jayx239/BrowseSharp/releases/tag/0.0.5-beta"
+        },
+        {
+          "name": "Nuget",
+          "imgUrl": "img/nuget-logo.svg",
+          "class": "nuget",
+          "displayText": "Nuget",
+          "useImage": "true",
+          "url": "https://www.nuget.org/packages/BrowseSharp/0.0.5-beta"
+        }
+      ]
     }
   ]
 }
