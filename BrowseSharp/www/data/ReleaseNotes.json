@@ -271,6 +271,28 @@
           "url": "https://www.nuget.org/packages/BrowseSharp/0.0.5"
         }
       ]
+    },{
+      "name": "0.0.6-alpha",
+      "displayName": "Version 0.0.6-alpha",
+      "notesHtml": "<p>Features:</p><ul><li>Added type deserialization for browser methods.<ul><li>You can now call a browser method with a given type and the response body will be deserialized into an object.</li><li>For example, if you call Document = Execute() you would be able retreive the Dog object from the response document by calling Dog dog = Document.Data;<br>In progress:</li></ul></li><li>There will be an additional 2 browsers with release 0.0.6<ul><li>BrowserStandard - This will have the standard methods present in BrowseSharp versions prior to 0.0.6</li><li>BrowserTyped - This will have the Typed methods that are being added with this release</li></ul></li><li>The Browser will have support for all of these methods.</li></ul>",
+      "downloadLinks": [
+        {
+          "name": "GitHub",
+          "imgUrl": "img/GitHub_Logo.png",
+          "class": "github",
+          "displayText": "GitHub",
+          "useImage": "true",
+          "url": "https://github.com/Jayx239/BrowseSharp/releases/tag/0.0.6-alpha"
+        },
+        {
+          "name": "Nuget",
+          "imgUrl": "img/nuget-logo.svg",
+          "class": "nuget",
+          "displayText": "Nuget",
+          "useImage": "true",
+          "url": "https://www.nuget.org/packages/BrowseSharp/0.0.6-alpha"
+        }
+      ]
     }
   ]
 }
