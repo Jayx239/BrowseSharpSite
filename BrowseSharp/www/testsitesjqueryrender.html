@@ -23,17 +23,15 @@
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/release.js"></script>
-    <script>
-        $(document).ready(function() {
-            var switcher = releaseSwitcher("/data/ReleaseNotes.json",$(".container.version-content"));
-            $("#VersionDropdownList .dropdown-item").click(function() {
-                var index = $(this).data("index");
-                switcher.Switch(index);
-            });
-            switcher.CreateDropdownItems($("#VersionDropdownList"));
-        });
-    </script>
+    <script type="text/javascript">
 
+        $(document).ready(function(){
+            $("#Area1").html("<span> this is the first rendered area</span>");
+            $("#Area2").html("<h1>Check out this title</h1><select id='ListNew'></select>");
+            $("#ListNew").html("<option value='Item1'>Select me first</option> <option value='Item2'>Select this if you want</option>");
+        })
+
+    </script>
 </head>
 <body>
 <header>
@@ -52,7 +50,7 @@
                     <a class="nav-link" href="https://jayx239.github.io/BrowseSharp/">API</a>
                 </li>
 
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a class="nav-link" href="releases.html">Releases</a>
                 </li>
                 <li class="nav-item">
@@ -61,7 +59,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href="feedback.html">Feedback</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item active">
                     <div class="dropdown">
                         <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Test Sites
@@ -72,7 +70,7 @@
                             <button class="dropdown-item" type="button"><a href="testsitesjqueryrender.html">JQuery Render</a></button>
                         </div>
                     </div>
-            </li>
+                </li>
             </ul>
         </div>
     </nav>
@@ -81,50 +79,16 @@
     <div class="container container-fluid mt-4">
         <div class="container">
             <div class="row">
-                <h3 class="mt-4">Releases</h3>
-            </div>
-            <div class="row align-items-center download-links">
-                <div class="col-12 col-sm-3 col-md-2 align-center">
-                    Get it on:
-                </div>
-                <div class="col-12 col-sm-9 col-md-10 align-self-right"><a href="https://github.com/Jayx239/BrowseSharp/releases"><img
-                        src="img/GitHub_Logo.png"
-                        class="github-img"/></a>
-                    <div class="pipe">|</div>
-                    <a href="https://www.nuget.org/packages/BrowseSharp" rel="nofollow"><img
-                            src="https://camo.githubusercontent.com/643dcdb74951dcf6efe76ee6c49da9a52531f9e7/68747470733a2f2f696d672e736869656c64732e696f2f6e756765742f762f42726f77736553686172702e737667"
-                            alt="NuGet" data-canonical-src="https://img.shields.io/nuget/v/BrowseSharp.svg"
-                            style="max-width:100%;"></a>
-                </div>
-
+                <h3 class="mt-4">Form Test Page</h3>
             </div>
             <div class="row">
-                <div class="mt-4">
+                <div id="Area1">
 
                 </div>
             </div>
-            <div class="card h-100 release-notes">
-                <div class="card-header">
-                    <div class="row align-items-center">
-                        <h4 class="col-12 col-sm-6">Release Notes</h4>
-                        <div class="dropdown col-12 col-sm-6">
-                            <button class="btn btn-secondary dropdown-toggle" type="button" id="versionDropdownButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Release Version
-                            </button>
-                            <div id="VersionDropdownList" class="dropdown-menu" aria-labelledby="versionDropdownButton">
-                                <a class="dropdown-item" href="#004-beta">0.0.4-beta</a>
-                                <a class="dropdown-item" href="#0004-alpha">0.0.4-alpha</a>
-                                <a class="dropdown-item" href="#003">0.0.3</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-body">
-                    <div class="row">
-                        <div class="container version-content">
+            <div class="row">
+                <div id="Area2">
 
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
