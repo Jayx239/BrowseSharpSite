@@ -293,6 +293,52 @@
           "url": "https://www.nuget.org/packages/BrowseSharp/0.0.6-alpha"
         }
       ]
+    },
+    {
+      "name": "0.0.6-beta",
+      "displayName": "Version 0.0.6-beta",
+      "notesHtml": "<p>Implemented 2 browsers:</p><ul><li>BrowserStandard - This will have the standard methods present in BrowseSharp versions prior to 0.0.6</li><li>BrowserTyped - This will have the Typed methods that are being added with this release</li></ul>",
+      "downloadLinks": [
+        {
+          "name": "GitHub",
+          "imgUrl": "img/GitHub_Logo.png",
+          "class": "github",
+          "displayText": "GitHub",
+          "useImage": "true",
+          "url": "https://github.com/Jayx239/BrowseSharp/releases/tag/0.0.6-beta"
+        },
+        {
+          "name": "Nuget",
+          "imgUrl": "img/nuget-logo.svg",
+          "class": "nuget",
+          "displayText": "Nuget",
+          "useImage": "true",
+          "url": "https://www.nuget.org/packages/BrowseSharp/0.0.6-beta"
+        }
+      ]
+    },
+    {
+      "name": "0.0.6",
+      "displayName": "Version 0.0.6",
+      "notesHtml": "<ul>li>Added type support for browser.</li><li>Implemented 2 new browsers:<ul><li>BrowserStandard - This will have the standard methods present in BrowseSharp versions prior to 0.0.6</li><li>BrowserTyped - This will have the Typed methods that are being added with this release</li><li>Browser has support for all of these methods.</li></ul></li></ul>",
+      "downloadLinks": [
+        {
+          "name": "GitHub",
+          "imgUrl": "img/GitHub_Logo.png",
+          "class": "github",
+          "displayText": "GitHub",
+          "useImage": "true",
+          "url": "https://github.com/Jayx239/BrowseSharp/releases/tag/0.0.6"
+        },
+        {
+          "name": "Nuget",
+          "imgUrl": "img/nuget-logo.svg",
+          "class": "nuget",
+          "displayText": "Nuget",
+          "useImage": "true",
+          "url": "https://www.nuget.org/packages/BrowseSharp/0.0.6"
+        }
+      ]
     }
   ]
 }
