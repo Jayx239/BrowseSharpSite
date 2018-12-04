@@ -339,6 +339,73 @@
           "url": "https://www.nuget.org/packages/BrowseSharp/0.0.6"
         }
       ]
+    },{
+      "name": "0.0.7-alpha",
+      "displayName": "Version 0.0.7-alpha",
+      "notesHtml": "<ul><li>Added target frameworks for .net 4.5.2 and .net 4.6</li></ul>",
+      "downloadLinks": [
+        {
+          "name": "GitHub",
+          "imgUrl": "img/GitHub_Logo.png",
+          "class": "github",
+          "displayText": "GitHub",
+          "useImage": "true",
+          "url": "https://github.com/Jayx239/BrowseSharp/releases/tag/0.0.7-alpha"
+        },
+        {
+          "name": "Nuget",
+          "imgUrl": "img/nuget-logo.svg",
+          "class": "nuget",
+          "displayText": "Nuget",
+          "useImage": "true",
+          "url": "https://www.nuget.org/packages/BrowseSharp/0.0.7-alpha"
+        }
+      ]
+    },{
+      "name": "0.0.7-beta",
+      "displayName": "Version 0.0.7-beta",
+      "notesHtml": "<ul><li>Fixed bug with target frameworks 4.5.2 and 4.6<ul><li>Needed to setup ServicePointManager.SecurityProtocol configuration.</li></ul></li></ul>",
+      "downloadLinks": [
+        {
+          "name": "GitHub",
+          "imgUrl": "img/GitHub_Logo.png",
+          "class": "github",
+          "displayText": "GitHub",
+          "useImage": "true",
+          "url": "https://github.com/Jayx239/BrowseSharp/releases/tag/0.0.7-beta"
+        },
+        {
+          "name": "Nuget",
+          "imgUrl": "img/nuget-logo.svg",
+          "class": "nuget",
+          "displayText": "Nuget",
+          "useImage": "true",
+          "url": "https://www.nuget.org/packages/BrowseSharp/0.0.7-beta"
+        }
+      ]
+    },{
+      "name": "0.0.7",
+      "displayName": "Version 0.0.7",
+      "notesHtml": "<ul><li>Added target frameworks 4.5.2 and 4.6</li><li>Updated RestSharp package to 106.5.4</li></ul>",
+      "downloadLinks": [
+        {
+          "name": "GitHub",
+          "imgUrl": "img/GitHub_Logo.png",
+          "class": "github",
+          "displayText": "GitHub",
+          "useImage": "true",
+          "url": "https://github.com/Jayx239/BrowseSharp/releases/tag/0.0.7"
+        },
+        {
+          "name": "Nuget",
+          "imgUrl": "img/nuget-logo.svg",
+          "class": "nuget",
+          "displayText": "Nuget",
+          "useImage": "true",
+          "url": "https://www.nuget.org/packages/BrowseSharp/0.0.7"
+        }
+      ]
     }
+
   ]
 }
