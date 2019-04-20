@@ -427,6 +427,50 @@
           "url": "https://www.nuget.org/packages/BrowseSharp/0.0.8-alpha"
         }
       ]
+    },{
+      "name": "0.0.8-beta",
+      "displayName": "Version 0.0.8-beta",
+      "notesHtml": "<ul><li>Fixed bug with UriHelper that was causing certain relative uri paths to not be constructed properly. Lead to certain external Javascript/Css styles to not be retrieved properly.</li><li>Removed direct manipulation of AngleSharp object in Javascript Object.</li></ul>",
+      "downloadLinks": [
+        {
+          "name": "GitHub",
+          "imgUrl": "img/GitHub_Logo.png",
+          "class": "github",
+          "displayText": "GitHub",
+          "useImage": "true",
+          "url": "https://github.com/Jayx239/BrowseSharp/tree/0.0.8-beta"
+        },
+        {
+          "name": "Nuget",
+          "imgUrl": "img/nuget-logo.svg",
+          "class": "nuget",
+          "displayText": "Nuget",
+          "useImage": "true",
+          "url": "https://www.nuget.org/packages/BrowseSharp/0.0.8-beta"
+        }
+      ]
+    },{
+      "name": "0.0.8",
+      "displayName": "Version 0.0.8",
+      "notesHtml": "<ul><li>Added BrowserThreadSafe<ul><li>Ensures that async calls will execute successfully one at a time</li><li>Maintains same functionality as base Browser</li></ul></li><li>Fixed bug with UriHelper that was causing certain relative uri paths to not be constructed properly. Lead to certain external Javascript/Css styles to not be retrieved properly.</li><li>Removed direct manipulation of AngleSharp object in Javascript Object.</li><li>Removed logic that set SecurityProtocol in the BrowserCore that was causing issues with .net core<ul><li>See <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load issue title\" data-id=\"433790620\" data-permission-text=\"Issue title is private\" data-url=\"https://github.com/Jayx239/BrowseSharp/issues/62\" data-hovercard-type=\"issue\" data-hovercard-url=\"/Jayx239/BrowseSharp/issues/62/hovercard\" href=\"https://github.com/Jayx239/BrowseSharp/issues/62\">#62</a></li></ul></li></ul>",
+      "downloadLinks": [
+        {
+          "name": "GitHub",
+          "imgUrl": "img/GitHub_Logo.png",
+          "class": "github",
+          "displayText": "GitHub",
+          "useImage": "true",
+          "url": "https://github.com/Jayx239/BrowseSharp/tree/0.0.8"
+        },
+        {
+          "name": "Nuget",
+          "imgUrl": "img/nuget-logo.svg",
+          "class": "nuget",
+          "displayText": "Nuget",
+          "useImage": "true",
+          "url": "https://www.nuget.org/packages/BrowseSharp/0.0.8"
+        }
+      ]
     }
 
   ]

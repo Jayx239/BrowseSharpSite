@@ -30,7 +30,7 @@
       <file leaf-file-name="feedback.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/BrowseSharp/www/feedback.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="117">
+            <state relative-caret-position="405">
               <caret line="27" column="26" lean-forward="false" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
               <folding />
             </state>
@@ -73,7 +73,7 @@
         <entry file="file://$PROJECT_DIR$/BrowseSharp/www/data/ReleaseNotes.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="372">
-              <caret line="427" column="9" lean-forward="true" selection-start-line="427" selection-start-column="9" selection-end-line="427" selection-end-column="9" />
+              <caret line="471" column="9" lean-forward="true" selection-start-line="471" selection-start-column="9" selection-end-line="471" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -202,7 +202,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -240,6 +239,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -306,12 +306,17 @@
       <workItem from="1537832120734" duration="286000" />
       <workItem from="1538854374316" duration="16000" />
       <workItem from="1543884693454" duration="1059000" />
-      <workItem from="1544238157329" duration="194000" />
+      <workItem from="1544238157329" duration="368000" />
+      <workItem from="1550801098072" duration="251000" />
+      <workItem from="1550942699402" duration="205000" />
+      <workItem from="1552144516145" duration="543000" />
+      <workItem from="1552848838427" duration="718000" />
+      <workItem from="1555725900904" duration="435000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52000000" />
+    <option name="totallyTimeSpent" value="54326000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="2" y="58" width="1260" height="690" extended-state="0" />
@@ -726,7 +731,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/BrowseSharp/www/feedback.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
+        <state relative-caret-position="405">
           <caret line="27" column="26" lean-forward="false" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
           <folding />
         </state>
@@ -735,7 +740,7 @@
     <entry file="file://$PROJECT_DIR$/BrowseSharp/www/data/ReleaseNotes.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="372">
-          <caret line="427" column="9" lean-forward="true" selection-start-line="427" selection-start-column="9" selection-end-line="427" selection-end-column="9" />
+          <caret line="471" column="9" lean-forward="true" selection-start-line="471" selection-start-column="9" selection-end-line="471" selection-end-column="9" />
           <folding />
         </state>
       </provider>
