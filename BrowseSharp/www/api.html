@@ -10,11 +10,11 @@
 
         gtag('config', 'UA-130363050-1');
     </script>
-
     <meta charset="UTF-8">
     <title>BrowseSharp</title>
     <meta name="description" content="A headless browser for C#">
-    <meta name="keywords" content="releases,browse sharp,sharp browser,browser sharp,HTML,CSS,JavaScript,Headless,Headless Browser,Browser,BrowseSharp,BrowseSharp.org,BrowseSharp.com,Jint,RestSharp,AngleSharp,Nuget,Github,C#,CSharp">
+    <meta name="keywords"
+          content="releases,browse sharp,sharp browser,browser sharp,HTML,CSS,JavaScript,Headless,Headless Browser,Browser,BrowseSharp,BrowseSharp.org,BrowseSharp.com,Jint,RestSharp,AngleSharp,Nuget,Github,C#,CSharp,Api,Versions,Documentation">
     <meta name="author" content="Jason Gallagher">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
@@ -34,6 +34,40 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/release.js"></script>
 
+    <script type="text/javascript" src="js/ApiVisualize.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            loadApiDocument("BrowseSharp003.xml");
+            loadMenu();
+        });
+    </script>
+    <style>
+        #menu {
+            height: 100%;
+            width: 20%;
+            overflow: scroll;
+            display: inline-block;
+        }
+
+        #content {
+            display: inline-block;
+            flex-direction: row;
+            flex: 8;
+            flex-wrap: wrap;
+            text-wrap: normal;
+            max-width: 100%;
+        }
+
+        ul li {
+            list-style-type: none;
+        }
+
+        ul li ul li {
+            list-style-type: circle;
+        }
+    </style>
+
 </head>
 <body>
 <header>
@@ -48,8 +82,8 @@
                 <li class="nav-item">
                     <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="api.html">API</a>
+                <li class="nav-item active">
+                    <a class="nav-link active" href="api.html">API</a>
                 </li>
 
                 <li class="nav-item">
@@ -61,15 +95,17 @@
                 <li class="nav-item">
                     <a class="nav-link" href="feedback.html">Feedback</a>
                 </li>
-                <li class="nav-item active">
+                <li class="nav-item">
                     <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Test Sites
                         </button>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
                             <button class="dropdown-item" type="button"><a href="testsites.html">Home</a></button>
                             <button class="dropdown-item" type="button"><a href="testsitesforms.html">Forms</a></button>
-                            <button class="dropdown-item" type="button"><a href="testsitesjqueryrender.html">JQuery Render</a></button>
+                            <button class="dropdown-item" type="button"><a href="testsitesjqueryrender.html">JQuery
+                                Render</a></button>
                         </div>
                     </div>
                 </li>
@@ -78,18 +114,34 @@
     </nav>
 </header>
 <main role="main">
-            <div class="container container-fluid mt-4">
-                <div class="container">
-                    <div class="row">
-                        <h3 class="mt-4">Test Sites</h3>
-                    </div>
-                    <div>
-                        <span>The test sites are pages you can use for testing BrowseSharp and it's html parsing capabilities</span>
-                        <ul class="mt-4">
-                            <li><a href="testsitesforms.html">Form Scraping</a></li>
-                        </ul>
+    <br><br>
+
+    <div class="mt-4">
+        <div class="container">
+            <div class="mt-4">
+                <div class="row">
+                    <div class="align-items-center">
+                        <h4 id="Title">0.0.8</h4>
+                        <div class="dropdown col-12 col-sm-6">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="versionDropdownButton"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Release Version
+                            </button>
+                            <div id="VersionDropdownList" class="dropdown-menu" aria-labelledby="versionDropdownButton">
+                            </div>
+                        </div>
                     </div>
                 </div>
+            </div>
+            <div class="mt-5">
+                <div id="menu">
+
+                </div>
+                <div id="content">
+
+                </div>
+            </div>
+        </div>
     </div>
 </main>
 <footer class="bd-footer text-muted">

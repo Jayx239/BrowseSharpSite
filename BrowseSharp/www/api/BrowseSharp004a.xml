@@ -1,0 +1,1512 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BrowseSharp</name>
+    </assembly>
+    <members>
+        <member name="T:BrowseSharp.Browser">
+            <summary>
+            Headless browser implimentation that creates documents for each web request.
+            </summary>
+        </member>
+        <member name="M:BrowseSharp.Browser.#ctor">
+            <summary>
+            Default Constructor
+            </summary>
+        </member>
+        <member name="P:BrowseSharp.Browser.Documents">
+            <summary>
+            List of documents stored from each request made
+            </summary>
+        </member>
+        <member name="P:BrowseSharp.Browser.JavascriptEngine">
+            <summary>
+            Javascript engine used by browser
+            </summary>
+        </member>
+        <member name="P:BrowseSharp.Browser.StyleEngine">
+            <summary>
+            Style engine for parsing css styles 
+            </summary>
+        </member>
+        <member name="F:BrowseSharp.Browser._restClient">
+            <summary>
+            Rest sharp http client for making web requests
+            </summary>
+        </member>
+        <member name="P:BrowseSharp.Browser.JavascriptScrapingEnabled">
+            <summary>
+            Enables or disables javascript scraping on each request
+            </summary>
+        </member>
+        <member name="P:BrowseSharp.Browser.StyleScrapingEnabled">
+            <summary>
+            Enables or disables style scraping on each request
+            </summary>
+        </member>
+        <member name="P:BrowseSharp.Browser.CookieContainer">
+            <summary>
+            Cookie container containing cookies
+            </summary>
+        </member>
+        <member name="P:BrowseSharp.Browser.AutomaticDecompression">
+            <summary>
+            Automatic decompression attribute for client
+            </summary>
+        </member>
+        <member name="P:BrowseSharp.Browser.MaxRedirects">
+            <summary>
+            Max number of redirects to be taken for a request
+            </summary>
+        </member>
+        <member name="P:BrowseSharp.Browser.UserAgent">
+            <summary>
+            User agent that client should send in request
+            </summary>
+        </member>
+        <member name="P:BrowseSharp.Browser.Timeout">
+            <summary>
+            Timeout for client
+            </summary>
+        </member>
+        <member name="P:BrowseSharp.Browser.ReadWriteTimeout">
+            <summary>
+            Read write timeout for client
+            </summary>
+        </member>
+        <member name="P:BrowseSharp.Browser.UseSynchronizationContext">
+            <summary>
+            Use synchronization context attribute for client
+            </summary>
+        </member>
+        <member name="P:BrowseSharp.Browser.Authenticator">
+            <summary>
+            Authenticator to be used by client
+            </summary>
+        </member>
+        <member name="P:BrowseSharp.Browser.BaseUrl">
+            <summary>
+            Base url for client that is used for each request
+            </summary>
+        </member>
+        <member name="P:BrowseSharp.Browser.Encoding">
+            <summary>
+            Encoding for client request
+            </summary>
+        </member>
+        <member name="P:BrowseSharp.Browser.PreAuthenticate">
+            <summary>
+            Pre-Authenticate parameter for client
+            </summary>
+        </member>
+        <member name="P:BrowseSharp.Browser.DefaultParameters">
+            <summary>
+            Default parameters for client
+            </summary>
+        </member>
+        <member name="P:BrowseSharp.Browser.BaseHost">
+            <summary>
+            Base host for client
+            </summary>
+        </member>
+        <member name="M:BrowseSharp.Browser.Deserialize``1(RestSharp.IRestResponse)">
+            <summary>
+            Deserialize method for client
+            </summary>
+            <param name="response"></param>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:BrowseSharp.Browser.DownloadData(RestSharp.IRestRequest)">
+            <summary>
+            Downloads data from response
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="P:BrowseSharp.Browser.ClientCertificates">
+            <summary>
+            X509Certificates for client
+            </summary>
+        </member>
+        <member name="P:BrowseSharp.Browser.Proxy">
+            <summary>
+            Proxy for client
+            </summary>
+        </member>
+        <member name="P:BrowseSharp.Browser.CachePolicy">
+            <summary>
+            Request cache policy for client
+            </summary>
+        </member>
+        <member name="P:BrowseSharp.Browser.Pipelined">
+            <summary>
+            Pipelined attribute for client
+            </summary>
+        </member>
+        <member name="P:BrowseSharp.Browser.FollowRedirects">
+            <summary>
+            Follow Redirects attribute for client
+            </summary>
+        </member>
+        <member name="M:BrowseSharp.Browser.BuildUri(RestSharp.IRestRequest)">
+            <summary>
+            Helper for building uri for client
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="P:BrowseSharp.Browser.RemoteCertificateValidationCallback">
+            <summary>
+            Remote certification validation callback for client
+            </summary>
+        </member>
+        <member name="M:BrowseSharp.Browser.AddHandler(System.String,RestSharp.Deserializers.IDeserializer)">
+            <summary>
+            Adds handler for client
+            </summary>
+            <param name="contentType"></param>
+            <param name="deserializer"></param>
+        </member>
+        <member name="M:BrowseSharp.Browser.RemoveHandler(System.String)">
+            <summary>
+            Removes handler from client
+            </summary>
+            <param name="contentType"></param>
+        </member>
+        <member name="M:BrowseSharp.Browser.ClearHandlers">
+            <summary>
+            Clears all handlers for client
+            </summary>
+        </member>
+        <member name="M:BrowseSharp.Browser.Execute(RestSharp.IRestRequest)">
+            <summary>
+            Executes a request
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BrowseSharp.Browser.ExecuteAsGet(RestSharp.IRestRequest,System.String)">
+            <summary>
+            Executes get request
+            </summary>
+            <param name="request"></param>
+            <param name="httpMethod"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BrowseSharp.Browser.ExecuteAsPost(RestSharp.IRestRequest,System.String)">
+            <summary>
+            Executes post request
+            </summary>
+            <param name="request"></param>
+            <param name="httpMethod"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BrowseSharp.Browser.ExecuteTaskAsync(RestSharp.IRestRequest,System.Threading.CancellationToken)">
+            <summary>
+            Executes request asynchronously
+            </summary>
+            <param name="request"></param>
+            <param name="token"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BrowseSharp.Browser.ExecuteTaskAsync(RestSharp.IRestRequest)">
+            <summary>
+            Executes request asynchronously
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BrowseSharp.Browser.ExecuteGetTaskAsync(RestSharp.IRestRequest)">
+            <summary>
+            Executes get request asynchronously
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BrowseSharp.Browser.ExecuteGetTaskAsync(RestSharp.IRestRequest,System.Threading.CancellationToken)">
+            <summary>
+            Executes get request asynchronously
+            </summary>
+            <param name="request"></param>
+            <param name="token"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BrowseSharp.Browser.ExecutePostTaskAsync(RestSharp.IRestRequest)">
+            <summary>
+            Executes post request asynchronously
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BrowseSharp.Browser.ExecutePostTaskAsync(RestSharp.IRestRequest,System.Threading.CancellationToken)">
+            <summary>
+            Executes post request asynchronously
+            </summary>
+            <param name="request"></param>
+            <param name="token"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BrowseSharp.Browser.Navigate(System.String)">
+            <summary>
+            Performs get request
+            </summary>
+            <param name="uri"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BrowseSharp.Browser.Navigate(System.Uri)">
+            <summary>
+            Performs get request
+            </summary>
+            <param name="uri"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BrowseSharp.Browser.Navigate(System.String,System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Performs get request
+            </summary>
+            <param name="uri"></param>
+            <param name="headers"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BrowseSharp.Browser.Navigate(System.Uri,System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Performs get request
+            </summary>
+            <param name="uri"></param>
+            <param name="headers"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BrowseSharp.Browser.Navigate(System.String,System.Collections.Generic.Dictionary{System.String,System.String},System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Performs get request
+            </summary>
+            <param name="uri"></param>
+            <param name="headers"></param>
+            <param name="formData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BrowseSharp.Browser.Navigate(System.Uri,System.Collections.Generic.Dictionary{System.String,System.String},System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Performs get request
+            </summary>
+            <param name="uri"></param>
+            <param name="headers"></param>
+            <param name="formData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BrowseSharp.Browser.NavigateAsync(System.String)">
+            <summary>
+            Performs get request asynchronously
+            </summary>
+            <param name="uri"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BrowseSharp.Browser.NavigateAsync(System.Uri)">
+            <summary>
+            Performs get request asynchronously
+            </summary>
+            <param name="uri"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BrowseSharp.Browser.NavigateAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Performs get request asynchronously
+            </summary>
+            <param name="uri"></param>
+            <param name="headers"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BrowseSharp.Browser.NavigateAsync(System.Uri,System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Performs get request asynchronously
+            </summary>
+            <param name="uri"></param>
+            <param name="headers"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BrowseSharp.Browser.NavigateAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.String},System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Performs get request asynchronously
+            </summary>
+            <param name="uri"></param>
+            <param name="headers"></param>
+            <param name="formData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BrowseSharp.Browser.NavigateAsync(System.Uri,System.Collections.Generic.Dictionary{System.String,System.String},System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Performs get request asynchronously
+            </summary>
+            <param name="uri"></param>
+            <param name="headers"></param>
+            <param name="formData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BrowseSharp.Browser.Submit(System.String)">
+            <summary>
+            Performs a post request
+            </summary>
+            <param name="uri"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BrowseSharp.Browser.Submit(System.Uri)">
+            <summary>
+            Performs a post request
+            </summary>
+            <param name="uri"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BrowseSharp.Browser.Submit(System.String,System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Performs a post request
+            </summary>
+            <param name="uri"></param>
+            <param name="formData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BrowseSharp.Browser.Submit(System.Uri,System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Performs a post request
+            </summary>
+            <param name="uri"></param>
+            <param name="formData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BrowseSharp.Browser.Submit(System.String,System.Collections.Generic.Dictionary{System.String,System.String},System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Performs a post request
+            </summary>
+            <param name="uri"></param>
+            <param name="formData"></param>
+            <param name="headers"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BrowseSharp.Browser.Submit(System.Uri,System.Collections.Generic.Dictionary{System.String,System.String},System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Performs a post request
+            </summary>
+            <param name="uri"></param>
+            <param name="formData"></param>
+            <param name="headers"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BrowseSharp.Browser.SubmitAsync(System.String)">
+            <summary>
+            Performs a post request asynchronously
+            </summary>
+            <param name="uri"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BrowseSharp.Browser.SubmitAsync(System.Uri)">
+            <summary>
+            Performs a post request asynchronously
+            </summary>
+            <param name="uri"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BrowseSharp.Browser.SubmitAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Performs a post request asynchronously
+            </summary>
+            <param name="uri"></param>
+            <param name="formData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BrowseSharp.Browser.SubmitAsync(System.Uri,System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Performs a post request asynchronously
+            </summary>
+            <param name="uri"></param>
+            <param name="formData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BrowseSharp.Browser.SubmitAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.String},System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Performs a post request asynchronously
+            </summary>
+            <param name="uri"></param>
+            <param name="formData"></param>
+            <param name="headers"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BrowseSharp.Browser.SubmitAsync(System.Uri,System.Collections.Generic.Dictionary{System.String,System.String},System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Performs a post request asynchronously
+            </summary>
+            <param name="uri"></param>
+            <param name="formData"></param>
+            <param name="headers"></param>
+            <returns></returns>
+        </member>
+        <member name="P:BrowseSharp.Browser.History">
+            <summary>
+            Contains all previous documents stored for each previous request
+            </summary>
+        </member>
+        <member name="P:BrowseSharp.Browser.ForwardHistory">
+            <summary>
+            Stores the forward history when the back method is called 
+            </summary>
+        </member>
+        <member name="M:BrowseSharp.Browser.ClearHistory">
+            <summary>
+            Clears browse history by re-initializing Documents
+            </summary>
+        </member>
+        <member name="M:BrowseSharp.Browser.ClearForwardHistory">
+            <summary>
+            Clears forward history
+            </summary>
+        </member>
+        <member name="M:BrowseSharp.Browser.Back">
+            <summary>
+            Method for navigating to last browser state by re-issuing the previous request
+            </summary>
+        </member>
+        <member name="M:BrowseSharp.Browser.Back(System.Boolean)">
+            <summary>
+            Method for navigating to last browser state
+            </summary>
+            <param name="useCache">Determines whether to re-issue request or reload last document</param>
+        </member>
+        <member name="M:BrowseSharp.Browser.BackAsync">
+            <summary>
+            Method for navigating to last browser state by re-issuing the previous request asynchronously
+            </summary>
+        </member>
+        <member name="M:BrowseSharp.Browser.BackAsync(System.Boolean)">
+            <summary>
+            Method for navigating to last browser state asynchronously
+            </summary>
+            <param name="useCache">Determines whether to re-issue request or reload last document</param>
+        </member>
+        <member name="M:BrowseSharp.Browser.Forward">
+            <summary>
+            Navigate to next document in forward history
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BrowseSharp.Browser.Forward(System.Boolean)">
+            <summary>
+            Navigate to next document in forward history
+            </summary>
+            <param name="useCache"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BrowseSharp.Browser.ForwardAsync">
+            <summary>
+            Navigate to next document in forward history asynchronously
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BrowseSharp.Browser.ForwardAsync(System.Boolean)">
+            <summary>
+            Navigate to next document in forward history asynchronously
+            </summary>
+            <param name="useCache"></param>
+            <returns></returns>
+        </member>
+        <member name="P:BrowseSharp.Browser.MaxHistorySize">
+            <summary>
+            Max amount of history/Documents to be stored by the browser (-1 for no limit)
+            </summary>
+        </member>
+        <member name="M:BrowseSharp.Browser.Refresh">
+            <summary>
+            Refresh page, re-submits last request
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BrowseSharp.Browser.RefreshAsync">
+            <summary>
+            Refresh page, re-submits last request asynchronously
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:BrowseSharp.Browser.Document">
+            <summary>
+            Gets current document from the current request
+            </summary>
+            <returns>Current Document</returns>
+        </member>
+        <member name="F:BrowseSharp.Browser._documents">
+            <summary>
+            Documents generated for each request
+            </summary>
+        </member>
+        <member name="F:BrowseSharp.Browser._forwardHistory">
+            <summary>
+            Stores the forward history when the back method is called 
+            </summary>
+        </member>
+        <member name="M:BrowseSharp.Browser.PackageAndAddDocument(RestSharp.IRestRequest,RestSharp.IRestResponse)">
+            <summary>
+            Creates a document from a request and response
+            </summary>
+            <param name="request"></param>
+            <param name="response"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BrowseSharp.Browser.PackageAndAddDocumentAsync(RestSharp.IRestRequest,System.Threading.Tasks.Task{RestSharp.IRestResponse})">
+            <summary>
+            Creates a document from a request and response asynchronously
+            </summary>
+            <param name="request"></param>
+            <param name="responseTask"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BrowseSharp.Browser.AddFormData(RestSharp.IRestRequest,System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Adds form data to the request input
+            </summary>
+            <param name="request"></param>
+            <param name="formData"></param>
+        </member>
+        <member name="M:BrowseSharp.Browser.AddHeaders(RestSharp.IRestRequest,System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Adds headers to the request input
+            </summary>
+            <param name="request"></param>
+            <param name="headers"></param>
+        </member>
+        <member name="M:BrowseSharp.Browser.TrimHistory(System.Boolean)">
+            <summary>
+            Trims history to the max history size
+            </summary>
+            <param name="beforeNavigate">Indicates whether method is called before or after navigation</param>
+        </member>
+        <member name="T:BrowseSharp.Document">
+            <summary>
+            Documents that contain data about each http request
+            </summary>
+        </member>
+        <member name="M:BrowseSharp.Document.#ctor">
+            <summary>
+            Default constructor generating new Document
+            </summary>
+        </member>
+        <member name="M:BrowseSharp.Document.#ctor(RestSharp.IRestRequest,RestSharp.IRestResponse)">
+            <summary>
+            Constructor generating new Document
+            </summary>
+            <param name="request"></param>
+            <param name="response"></param>
+        </member>
+        <member name="M:BrowseSharp.Document.#ctor(RestSharp.IRestRequest,RestSharp.IRestResponse,AngleSharp.Dom.Html.IHtmlDocument)">
+            <summary>
+            Constructor generating new Document
+            </summary>
+            <param name="request"></param>
+            <param name="response"></param>
+            <param name="htmlDocument"></param>
+        </member>
+        <member name="P:BrowseSharp.Document.Response">
+            <summary>
+            Response returned by http request
+            </summary>
+        </member>
+        <member name="P:BrowseSharp.Document.Request">
+            <summary>
+            Request made by client
+            </summary>
+        </member>
+        <member name="P:BrowseSharp.Document.HtmlDocument">
+            <summary>
+            Anglesharp document parsed from response
+            </summary>
+        </member>
+        <member name="P:BrowseSharp.Document.Scripts">
+            <summary>
+            Javascripts parsed from response
+            </summary>
+        </member>
+        <member name="P:BrowseSharp.Document.Styles">
+            <summary>
+            Stylesheets parsed from response
+            </summary>
+        </member>
+        <member name="T:BrowseSharp.IBrowser">
+            <summary>
+            Browser interface for BrowseSharp
+            </summary>
+        </member>
+        <member name="P:BrowseSharp.IBrowser.CookieContainer">
+            <summary>
+            CookieContainer wrapper for internal restsharp client
+            </summary>
+        </member>
+        <member name="P:BrowseSharp.IBrowser.AutomaticDecompression">
+            <summary>
+            AutomaticDecompression attribute wrapper for internal restsharp client
+            </summary>
+        </member>
+        <member name="P:BrowseSharp.IBrowser.MaxRedirects">
+            <summary>
+            MaxRedirects attribute wrapper for internal restsharp client
+            </summary>
+        </member>
+        <member name="P:BrowseSharp.IBrowser.UserAgent">
+            <summary>
+            UserAgent attribute wrapper for internal restsharp client
+            </summary>
+        </member>
+        <member name="P:BrowseSharp.IBrowser.Timeout">
+            <summary>
+            Timeout attribute wrapper for internal restsharp client
+            </summary>
+        </member>
+        <member name="P:BrowseSharp.IBrowser.ReadWriteTimeout">
+            <summary>
+            ReadWriteTimeout attribute wrapper for internal restsharp client
+            </summary>
+        </member>
+        <member name="P:BrowseSharp.IBrowser.UseSynchronizationContext">
+            <summary>
+            UseSynchronizationContext attribute wrapper for internal restsharp client
+            </summary>
+        </member>
+        <member name="P:BrowseSharp.IBrowser.Authenticator">
+            <summary>
+            Authenticator attribute wrapper for internal restsharp client
+            </summary>
+        </member>
+        <member name="P:BrowseSharp.IBrowser.BaseUrl">
+            <summary>
+            BaseUrl attribute wrapper for internal restsharp client
+            Url used in request
+            </summary>
+        </member>
+        <member name="P:BrowseSharp.IBrowser.Encoding">
+            <summary>
+            Encoding attribute wrapper for internal restsharp client
+            Encoding type for request
+            </summary>
+        </member>
+        <member name="P:BrowseSharp.IBrowser.PreAuthenticate">
+            <summary>
+            PreAuthenticate attribute wrapper for internal restsharp client
+            </summary>
+        </member>
+        <member name="P:BrowseSharp.IBrowser.DefaultParameters">
+            <summary>
+            DefaultParameters attribute wrapper for internal restsharp client
+            </summary>
+        </member>
+        <member name="P:BrowseSharp.IBrowser.BaseHost">
+            <summary>
+            BaseHost attribute wrapper for internal restsharp client
+            </summary>
+        </member>
+        <member name="M:BrowseSharp.IBrowser.Deserialize``1(RestSharp.IRestResponse)">
+            <summary>
+            Deserialize method wrapper for internal restsharp client
+            </summary>
+            <param name="response"></param>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:BrowseSharp.IBrowser.DownloadData(RestSharp.IRestRequest)">
+            <summary>
+            DownloadData method wrapper for internal restsharp client
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="P:BrowseSharp.IBrowser.ClientCertificates">
+            <summary>
+            ClientCertificates wrapper for internal restsharp client
+            </summary>
+        </member>
+        <member name="P:BrowseSharp.IBrowser.Proxy">
+            <summary>
+            Proxy attribute wrapper for internal restsharp client
+            </summary>
+        </member>
+        <member name="P:BrowseSharp.IBrowser.CachePolicy">
+            <summary>
+            RequestCachePolicy attribute wrapper for internal restsharp client
+            </summary>
+        </member>
+        <member name="P:BrowseSharp.IBrowser.Pipelined">
+            <summary>
+            Pipelined attribute wrapper for internal restsharp client
+            </summary>
+        </member>
+        <member name="P:BrowseSharp.IBrowser.FollowRedirects">
+            <summary>
+            FollowRedirects attribute wrapper for internal restsharp client
+            </summary>
+        </member>
+        <member name="M:BrowseSharp.IBrowser.BuildUri(RestSharp.IRestRequest)">
+            <summary>
+            BuildUri Method wrapper for internal restsharp client
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="P:BrowseSharp.IBrowser.RemoteCertificateValidationCallback">
+            <summary>
+            RemoteCertificateValidationCallback method wrapper for internal restsharp client
+            </summary>
+        </member>
+        <member name="M:BrowseSharp.IBrowser.AddHandler(System.String,RestSharp.Deserializers.IDeserializer)">
+            <summary>
+            AddHandler method wrapper for internal restsharp client
+            </summary>
+            <param name="contentType"></param>
+            <param name="deserializer"></param>
+        </member>
+        <member name="M:BrowseSharp.IBrowser.RemoveHandler(System.String)">
+            <summary>
+            RemoveHandler method wrapper for internal restsharp client
+            </summary>
+            <param name="contentType"></param>
+        </member>
+        <member name="M:BrowseSharp.IBrowser.ClearHandlers">
+            <summary>
+            ClearHandlers method wrapper for internal restsharp client
+            </summary>
+        </member>
+        <member name="M:BrowseSharp.IBrowser.Execute(RestSharp.IRestRequest)">
+            <summary>
+            Execute method that creates a document from an http request
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BrowseSharp.IBrowser.ExecuteAsGet(RestSharp.IRestRequest,System.String)">
+            <summary>
+            Execute method that creates a document from an http get request
+            </summary>
+            <param name="request"></param>
+            <param name="httpMethod"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BrowseSharp.IBrowser.ExecuteAsPost(RestSharp.IRestRequest,System.String)">
+            <summary>
+            Execute method that creates a document from an http post request
+            </summary>
+            <param name="request"></param>
+            <param name="httpMethod"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BrowseSharp.IBrowser.ExecuteTaskAsync(RestSharp.IRestRequest,System.Threading.CancellationToken)">
+            <summary>
+            Execute method that creates a document from an asynchronous http request
+            </summary>
+            <param name="request"></param>
+            <param name="token"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BrowseSharp.IBrowser.ExecuteTaskAsync(RestSharp.IRestRequest)">
+            <summary>
+            Execute method that creates a document from an asynchronous http request
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BrowseSharp.IBrowser.ExecuteGetTaskAsync(RestSharp.IRestRequest)">
+            <summary>
+            Execute method that creates a document from an asynchronous http get request
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BrowseSharp.IBrowser.ExecuteGetTaskAsync(RestSharp.IRestRequest,System.Threading.CancellationToken)">
+            <summary>
+            Execute method that creates a document from an asynchronous http get request
+            </summary>
+            <param name="request"></param>
+            <param name="token"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BrowseSharp.IBrowser.ExecutePostTaskAsync(RestSharp.IRestRequest)">
+            <summary>
+            Execute method that creates a document from an asynchronous http post request
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BrowseSharp.IBrowser.ExecutePostTaskAsync(RestSharp.IRestRequest,System.Threading.CancellationToken)">
+            <summary>
+            Execute method that creates a document from an asynchronous http post request
+            </summary>
+            <param name="request"></param>
+            <param name="token"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BrowseSharp.IBrowser.Navigate(System.String)">
+            <summary>
+            Method that makes a get request and creates a document
+            </summary>
+            <param name="uri"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BrowseSharp.IBrowser.Navigate(System.Uri)">
+            <summary>
+            Method that makes a get request and creates a document
+            </summary>
+            <param name="uri"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BrowseSharp.IBrowser.Navigate(System.String,System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Method that makes a get request and creates a document
+            </summary>
+            <param name="uri"></param>
+            <param name="headers"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BrowseSharp.IBrowser.Navigate(System.Uri,System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Method that makes a get request and creates a document
+            </summary>
+            <param name="uri"></param>
+            <param name="headers"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BrowseSharp.IBrowser.Navigate(System.String,System.Collections.Generic.Dictionary{System.String,System.String},System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Method that makes a get request and creates a document
+            </summary>
+            <param name="uri"></param>
+            <param name="headers"></param>
+            <param name="formData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BrowseSharp.IBrowser.Navigate(System.Uri,System.Collections.Generic.Dictionary{System.String,System.String},System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Method that makes a get request and creates a document
+            </summary>
+            <param name="uri"></param>
+            <param name="headers"></param>
+            <param name="formData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BrowseSharp.IBrowser.NavigateAsync(System.String)">
+            <summary>
+            Method that makes an asynchronous get request and creates a document
+            </summary>
+            <param name="uri"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BrowseSharp.IBrowser.NavigateAsync(System.Uri)">
+            <summary>
+            Method that makes an asynchronous get request and creates a document
+            </summary>
+            <param name="uri"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BrowseSharp.IBrowser.NavigateAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Method that makes an asynchronous get request and creates a document
+            </summary>
+            <param name="uri"></param>
+            <param name="headers"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BrowseSharp.IBrowser.NavigateAsync(System.Uri,System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Method that makes an asynchronous get request and creates a document
+            </summary>
+            <param name="uri"></param>
+            <param name="headers"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BrowseSharp.IBrowser.NavigateAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.String},System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Method that makes an asynchronous get request and creates a document
+            </summary>
+            <param name="uri"></param>
+            <param name="headers"></param>
+            <param name="formData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BrowseSharp.IBrowser.NavigateAsync(System.Uri,System.Collections.Generic.Dictionary{System.String,System.String},System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Method that makes an asynchronous get request and creates a document
+            </summary>
+            <param name="uri"></param>
+            <param name="headers"></param>
+            <param name="formData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BrowseSharp.IBrowser.Submit(System.String)">
+            <summary>
+            Method that makes a post request and creates a document
+            </summary>
+            <param name="uri"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BrowseSharp.IBrowser.Submit(System.Uri)">
+            <summary>
+            Method that makes a post request and creates a document
+            </summary>
+            <param name="uri"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BrowseSharp.IBrowser.Submit(System.String,System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Method that makes a post request and creates a document
+            </summary>
+            <param name="uri"></param>
+            <param name="formData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BrowseSharp.IBrowser.Submit(System.Uri,System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Method that makes a post request and creates a document
+            </summary>
+            <param name="uri"></param>
+            <param name="formData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BrowseSharp.IBrowser.Submit(System.String,System.Collections.Generic.Dictionary{System.String,System.String},System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Method that makes a post request and creates a document
+            </summary>
+            <param name="uri"></param>
+            <param name="formData"></param>
+            <param name="headers"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BrowseSharp.IBrowser.Submit(System.Uri,System.Collections.Generic.Dictionary{System.String,System.String},System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Method that makes a post request and creates a document
+            </summary>
+            <param name="uri"></param>
+            <param name="formData"></param>
+            <param name="headers"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BrowseSharp.IBrowser.SubmitAsync(System.String)">
+            <summary>
+            Method that makes an asynchronous post request and creates a document
+            </summary>
+            <param name="uri"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BrowseSharp.IBrowser.SubmitAsync(System.Uri)">
+            <summary>
+            Method that makes an asynchronous post request and creates a document
+            </summary>
+            <param name="uri"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BrowseSharp.IBrowser.SubmitAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Method that makes an asynchronous post request and creates a document
+            </summary>
+            <param name="uri"></param>
+            <param name="formData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BrowseSharp.IBrowser.SubmitAsync(System.Uri,System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Method that makes an asynchronous post request and creates a document
+            </summary>
+            <param name="uri"></param>
+            <param name="formData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BrowseSharp.IBrowser.SubmitAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.String},System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Method that makes an asynchronous post request and creates a document
+            </summary>
+            <param name="uri"></param>
+            <param name="formData"></param>
+            <param name="headers"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BrowseSharp.IBrowser.SubmitAsync(System.Uri,System.Collections.Generic.Dictionary{System.String,System.String},System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Method that makes an asynchronous post request and creates a document
+            </summary>
+            <param name="uri"></param>
+            <param name="formData"></param>
+            <param name="headers"></param>
+            <returns></returns>
+        </member>
+        <member name="P:BrowseSharp.IBrowser.History">
+            <summary>
+            Contains all previous documents stored for each previous request
+            </summary>
+        </member>
+        <member name="P:BrowseSharp.IBrowser.ForwardHistory">
+            <summary>
+            Stores the forward history when the back method is called 
+            </summary>
+        </member>
+        <member name="M:BrowseSharp.IBrowser.ClearHistory">
+            <summary>
+            Clears browse history by re-initializing Documents
+            </summary>
+        </member>
+        <member name="M:BrowseSharp.IBrowser.ClearForwardHistory">
+            <summary>
+            Clears forward history
+            </summary>
+        </member>
+        <member name="M:BrowseSharp.IBrowser.Back">
+            <summary>
+            Method for navigating to last browser state by re-issuing the previous request
+            </summary>
+        </member>
+        <member name="M:BrowseSharp.IBrowser.Back(System.Boolean)">
+            <summary>
+            Method for navigating to last browser state
+            </summary>
+            <param name="useCache">Determines whether to re-issue request or reload last document</param>
+        </member>
+        <member name="M:BrowseSharp.IBrowser.BackAsync">
+            <summary>
+            Method for navigating to last browser state by re-issuing the previous request asynchronously
+            </summary>
+        </member>
+        <member name="M:BrowseSharp.IBrowser.BackAsync(System.Boolean)">
+            <summary>
+            Method for navigating to last browser state asynchronously
+            </summary>
+            <param name="useCache">Determines whether to re-issue request or reload last document</param>
+        </member>
+        <member name="M:BrowseSharp.IBrowser.Forward">
+            <summary>
+            Navigate to next document in forward history
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BrowseSharp.IBrowser.Forward(System.Boolean)">
+            <summary>
+            Navigate to next document in forward history
+            </summary>
+            <param name="useCache"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BrowseSharp.IBrowser.ForwardAsync">
+            <summary>
+            Navigate to next document in forward history asynchronously
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BrowseSharp.IBrowser.ForwardAsync(System.Boolean)">
+            <summary>
+            Navigate to next document in forward history asynchronously
+            </summary>
+            <param name="useCache"></param>
+            <returns></returns>
+        </member>
+        <member name="P:BrowseSharp.IBrowser.MaxHistorySize">
+            <summary>
+            Max amount of history/Documents to be stored by the browser (-1 for no limit)
+            </summary>
+        </member>
+        <member name="M:BrowseSharp.IBrowser.Refresh">
+            <summary>
+            Refresh page, re-submits last request
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BrowseSharp.IBrowser.RefreshAsync">
+            <summary>
+            Refresh page, re-submits last request asynchronously
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:BrowseSharp.IBrowser.Document">
+            <summary>
+            Gets current document from the current request
+            </summary>
+            <returns>Current Document</returns>
+        </member>
+        <member name="T:BrowseSharp.IDocument">
+            <summary>
+            BrowseSharp Document containing info about an http request and result
+            </summary>
+        </member>
+        <member name="P:BrowseSharp.IDocument.Response">
+            <summary>
+            Response returned from http request
+            </summary>
+        </member>
+        <member name="P:BrowseSharp.IDocument.Request">
+            <summary>
+            Http request object
+            </summary>
+        </member>
+        <member name="P:BrowseSharp.IDocument.HtmlDocument">
+            <summary>
+            AngleSharp html document scraped from response
+            </summary>
+        </member>
+        <member name="P:BrowseSharp.IDocument.Scripts">
+            <summary>
+            Javascripts scraped from http response
+            </summary>
+        </member>
+        <member name="P:BrowseSharp.IDocument.Styles">
+            <summary>
+            Styles parsed from http response 
+            </summary>
+        </member>
+        <member name="T:BrowseSharp.IScraper">
+            <summary>
+            Interface for scrapers
+            </summary>
+        </member>
+        <member name="M:BrowseSharp.IScraper.Add(BrowseSharp.IDocument)">
+            <summary>
+            Method for adding scraped elements to a document
+            </summary>
+            <param name="document"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BrowseSharp.IScraper.AddAsync(BrowseSharp.IDocument)">
+            <summary>
+            Method for adding scraped elements to a document asynchronously
+            </summary>
+            <param name="document"></param>
+            <returns></returns>
+        </member>
+        <member name="T:BrowseSharp.ISource">
+            <summary>
+            Interface for objects that have a uri and content
+            </summary>
+        </member>
+        <member name="P:BrowseSharp.ISource.SourceUri">
+            <summary>
+            Uri of object source
+            </summary>
+        </member>
+        <member name="P:BrowseSharp.ISource.Content">
+            <summary>
+            Content of object
+            </summary>
+        </member>
+        <member name="T:BrowseSharp.Javascript.Javascript">
+            <summary>
+            Class containing javascript details
+            </summary>
+        </member>
+        <member name="M:BrowseSharp.Javascript.Javascript.#ctor(AngleSharp.Dom.Html.IHtmlScriptElement)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="scriptElement"></param>
+        </member>
+        <member name="P:BrowseSharp.Javascript.Javascript.ScriptElement">
+            <summary>
+            AngleSharp html element for script
+            </summary>
+        </member>
+        <member name="P:BrowseSharp.Javascript.Javascript.SourceUri">
+            <summary>
+            Uri of script source
+            </summary>
+        </member>
+        <member name="P:BrowseSharp.Javascript.Javascript.Content">
+            <summary>
+            Script content
+            </summary>
+        </member>
+        <member name="P:BrowseSharp.Javascript.Javascript.JavascriptString">
+            <summary>
+            Same as script content, may be deprecated in the future, use Content instead
+            </summary>
+        </member>
+        <member name="T:BrowseSharp.Javascript.JavascriptEngine">
+            <summary>
+            Javascript scraper and executor
+            </summary>
+        </member>
+        <member name="M:BrowseSharp.Javascript.JavascriptEngine.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="P:BrowseSharp.Javascript.JavascriptEngine.Document">
+            <summary>
+            String containing scripts to be executed
+            </summary>
+        </member>
+        <member name="P:BrowseSharp.Javascript.JavascriptEngine.GlobalVariables">
+            <summary>
+            Global variables that may be used in script execution 
+            </summary>
+        </member>
+        <member name="M:BrowseSharp.Javascript.JavascriptEngine.Execute(System.String)">
+            <summary>
+            Method for executing javascript command, uses document
+            </summary>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BrowseSharp.Javascript.JavascriptEngine.Add(BrowseSharp.IDocument)">
+            <summary>
+            Adds scripts to document
+            </summary>
+            <param name="document"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BrowseSharp.Javascript.JavascriptEngine.AddAsync(BrowseSharp.IDocument)">
+            <summary>
+            Adds scripts to document asynchronously
+            </summary>
+            <param name="document"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BrowseSharp.Javascript.JavascriptEngine.AddScripts(BrowseSharp.IDocument)">
+            <summary>
+            Same as Add method
+            </summary>
+            <param name="document"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BrowseSharp.Javascript.JavascriptEngine.ScrapeScripts(System.String)">
+            <summary>
+            Internal method for parsing scripts
+            </summary>
+            <param name="documentString"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BrowseSharp.Javascript.JavascriptEngine.ScrapeScripts(AngleSharp.Dom.Html.IHtmlDocument)">
+            <summary>
+            Internal method for parsing scripts
+            </summary>
+            <param name="document"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BrowseSharp.Javascript.JavascriptEngine.ScrapeScriptSrc(BrowseSharp.IDocument)">
+            <summary>
+            Internal method for scraping external scripts
+            </summary>
+            <param name="document"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BrowseSharp.Javascript.JavascriptEngine.ScrapeScriptSrcAsync(BrowseSharp.IDocument)">
+            <summary>
+            Internal method for scraping external scripts asynchronously
+            </summary>
+            <param name="document"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BrowseSharp.Javascript.JavascriptEngine.InitializeGlobals">
+            <summary>
+            Method for initializing globals with default js variables
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BrowseSharp.Javascript.JavascriptEngine.GetGlobalString">
+            <summary>
+            Gets global variable collection as a string
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BrowseSharp.Javascript.JavascriptEngine.ConvertToJavascripts(AngleSharp.Dom.IHtmlCollection{AngleSharp.Dom.Html.IHtmlScriptElement})">
+            <summary>
+            Converts AngleSharp Scripts to BrowseSharp Javascripts
+            </summary>
+            <param name="scriptElements"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BrowseSharp.Javascript.JavascriptEngine.ConvertToJavascript(AngleSharp.Dom.Html.IHtmlScriptElement)">
+            <summary>
+            Converts AngleSharp Script to BrowseSharp Javascript
+            </summary>
+            <param name="scriptElement"></param>
+            <returns></returns>
+        </member>
+        <member name="T:BrowseSharp.Javascript.JavascriptRequestAsyncHandle">
+            <summary>
+            Handler for scraping javascripts asynchronously
+            </summary>
+        </member>
+        <member name="M:BrowseSharp.Javascript.JavascriptRequestAsyncHandle.#ctor(System.Threading.Tasks.Task{System.Net.Http.HttpResponseMessage},BrowseSharp.Javascript.Javascript)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="responseAsyncTask"></param>
+            <param name="script"></param>
+        </member>
+        <member name="P:BrowseSharp.Javascript.JavascriptRequestAsyncHandle.ResponseAsyncTask">
+            <summary>
+            Task attribute containing asynchronous call task
+            </summary>
+        </member>
+        <member name="P:BrowseSharp.Javascript.JavascriptRequestAsyncHandle.Script">
+            <summary>
+            Javascript scraped from asynchronous http call
+            </summary>
+        </member>
+        <member name="T:BrowseSharp.Style.Style">
+            <summary>
+            Class containing a css style
+            </summary>
+        </member>
+        <member name="M:BrowseSharp.Style.Style.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="M:BrowseSharp.Style.Style.#ctor(System.String)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="styleString"></param>
+        </member>
+        <member name="M:BrowseSharp.Style.Style.#ctor(System.String,System.Uri)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="styleString"></param>
+            <param name="sourceUri"></param>
+        </member>
+        <member name="P:BrowseSharp.Style.Style.Content">
+            <summary>
+            CSS style content
+            </summary>
+        </member>
+        <member name="P:BrowseSharp.Style.Style.SourceUri">
+            <summary>
+            CSS style source uri
+            </summary>
+        </member>
+        <member name="P:BrowseSharp.Style.Style.StyleString">
+            <summary>
+            Same ass Content, use Content instead
+            </summary>
+        </member>
+        <member name="T:BrowseSharp.Style.StyleEngine">
+            <summary>
+            Class for scraping css styles
+            </summary>
+        </member>
+        <member name="M:BrowseSharp.Style.StyleEngine.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="F:BrowseSharp.Style.StyleEngine._scrapeStyleRegex">
+            <summary>
+            Regex used for parsing inline styles
+            </summary>
+        </member>
+        <member name="F:BrowseSharp.Style.StyleEngine._scrapeStyleSrcRegex">
+            <summary>
+            Regex used for scraping style srcs from html
+            </summary>
+        </member>
+        <member name="M:BrowseSharp.Style.StyleEngine.Add(BrowseSharp.IDocument)">
+            <summary>
+            Method for adding styles to a document. Returns number of script script found added 
+            </summary>
+            <param name="document"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BrowseSharp.Style.StyleEngine.AddAsync(BrowseSharp.IDocument)">
+            <summary>
+            Method for adding styles to a document asynchronously. Returns number of script script found added
+            </summary>
+            <param name="document"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BrowseSharp.Style.StyleEngine.ScrapeStyles(System.String)">
+            <summary>
+            Method for scraping styles from a document
+            </summary>
+            <param name="documentString"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BrowseSharp.Style.StyleEngine.ScrapeStylesSrc(BrowseSharp.IDocument)">
+            <summary>
+            Method for scraping styles and adding them to a document
+            </summary>
+            <param name="document"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BrowseSharp.Style.StyleEngine.ScrapeStylesSrcAsync(BrowseSharp.IDocument)">
+            <summary>
+            Method for scraping external styles and adding them to a document
+            </summary>
+            <param name="document"></param>
+            <returns></returns>
+        </member>
+        <member name="T:BrowseSharp.Style.StyleSheet">
+            <summary>
+            Class containing stylesheet content
+            </summary>
+        </member>
+        <member name="M:BrowseSharp.Style.StyleSheet.#ctor(System.Uri)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="sourceUri"></param>
+        </member>
+        <member name="M:BrowseSharp.Style.StyleSheet.#ctor(System.String)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="styleSheetString"></param>
+        </member>
+        <member name="M:BrowseSharp.Style.StyleSheet.#ctor(System.String,System.Uri)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="styleSheetString"></param>
+            <param name="sourceUri"></param>
+        </member>
+        <member name="P:BrowseSharp.Style.StyleSheet.SourceUri">
+            <summary>
+            Source uri of stylesheet
+            </summary>
+        </member>
+        <member name="P:BrowseSharp.Style.StyleSheet.Content">
+            <summary>
+            Content of stylesheet
+            </summary>
+        </member>
+        <member name="T:BrowseSharp.Style.StyleSheetRequestAsyncHandle">
+            <summary>
+            Handler for scraping stylesheets asynchronously
+            </summary>
+        </member>
+        <member name="M:BrowseSharp.Style.StyleSheetRequestAsyncHandle.#ctor(System.Threading.Tasks.Task{System.Net.Http.HttpResponseMessage},BrowseSharp.Style.StyleSheet)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="responseAsyncTask"></param>
+            <param name="styleSheet"></param>
+        </member>
+        <member name="P:BrowseSharp.Style.StyleSheetRequestAsyncHandle.ResponseAsyncTask">
+            <summary>
+            Task attribute containing asynchronous call task
+            </summary>
+        </member>
+        <member name="P:BrowseSharp.Style.StyleSheetRequestAsyncHandle.StyleSheet">
+            <summary>
+            StyleSheet scraped from asynchronous http call
+            </summary>
+        </member>
+        <member name="T:BrowseSharp.Toolbox.UriHelper">
+            <summary>
+            Helper class for Uri's
+            </summary>
+        </member>
+        <member name="M:BrowseSharp.Toolbox.UriHelper.GetUri(System.Uri,System.String)">
+            <summary>
+            Method for constructing uris when parsing document attributes
+            </summary>
+            <param name="responseUri"></param>
+            <param name="scriptSource"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BrowseSharp.Toolbox.UriHelper.ConcatPath(System.String,System.String)">
+            <summary>
+            Method for concatinating url components
+            </summary>
+            <param name="baseString"></param>
+            <param name="path"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
