@@ -2,32 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="235071d4-b6c9-4263-bce1-b7fa608cff52" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/BrowseSharp/www/api.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/BrowseSharp/www/api/BrowseSharp003.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/BrowseSharp/www/api/BrowseSharp004.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/BrowseSharp/www/api/BrowseSharp004a.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/BrowseSharp/www/api/BrowseSharp004b.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/BrowseSharp/www/api/BrowseSharp005.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/BrowseSharp/www/api/BrowseSharp005a.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/BrowseSharp/www/api/BrowseSharp005b.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/BrowseSharp/www/api/BrowseSharp006.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/BrowseSharp/www/api/BrowseSharp006a.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/BrowseSharp/www/api/BrowseSharp006b.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/BrowseSharp/www/api/BrowseSharp007.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/BrowseSharp/www/api/BrowseSharp007a.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/BrowseSharp/www/api/BrowseSharp007b.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/BrowseSharp/www/api/BrowseSharp008.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/BrowseSharp/www/api/BrowseSharp008a.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/BrowseSharp/www/api/BrowseSharp008b.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/BrowseSharp/www/js/ApiVisualize.js" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/BrowseSharp/www/feedback.html" afterPath="$PROJECT_DIR$/BrowseSharp/www/feedback.html" />
-      <change beforePath="$PROJECT_DIR$/BrowseSharp/www/index.html" afterPath="$PROJECT_DIR$/BrowseSharp/www/index.html" />
-      <change beforePath="$PROJECT_DIR$/BrowseSharp/www/projects.html" afterPath="$PROJECT_DIR$/BrowseSharp/www/projects.html" />
-      <change beforePath="$PROJECT_DIR$/BrowseSharp/www/releases.html" afterPath="$PROJECT_DIR$/BrowseSharp/www/releases.html" />
-      <change beforePath="$PROJECT_DIR$/BrowseSharp/www/testsites.html" afterPath="$PROJECT_DIR$/BrowseSharp/www/testsites.html" />
-      <change beforePath="$PROJECT_DIR$/BrowseSharp/www/testsitesforms.html" afterPath="$PROJECT_DIR$/BrowseSharp/www/testsitesforms.html" />
-      <change beforePath="$PROJECT_DIR$/BrowseSharp/www/testsitesjqueryrender.html" afterPath="$PROJECT_DIR$/BrowseSharp/www/testsitesjqueryrender.html" />
+      <change beforePath="$PROJECT_DIR$/BrowseSharp/www/api.html" afterPath="$PROJECT_DIR$/BrowseSharp/www/api.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -41,10 +16,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/BrowseSharp/www/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="177">
+            <state relative-caret-position="193">
               <caret line="87" column="98" lean-forward="false" selection-start-line="87" selection-start-column="98" selection-end-line="87" selection-end-column="98" />
               <folding />
             </state>
@@ -81,11 +56,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="api.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="api.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/BrowseSharp/www/api.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="35" column="0" lean-forward="true" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+            <state relative-caret-position="-875">
+              <caret line="40" column="43" lean-forward="false" selection-start-line="40" selection-start-column="43" selection-end-line="40" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -193,8 +168,8 @@
         <option value="$PROJECT_DIR$/BrowseSharp/www/releases.html" />
         <option value="$PROJECT_DIR$/BrowseSharp/www/projects.html" />
         <option value="$PROJECT_DIR$/BrowseSharp/www/feedback.html" />
-        <option value="$PROJECT_DIR$/BrowseSharp/www/api.html" />
         <option value="$PROJECT_DIR$/BrowseSharp/www/index.html" />
+        <option value="$PROJECT_DIR$/BrowseSharp/www/api.html" />
       </list>
     </option>
   </component>
@@ -345,12 +320,12 @@
       <workItem from="1552848838427" duration="718000" />
       <workItem from="1555725900904" duration="566000" />
       <workItem from="1555784744677" duration="369000" />
-      <workItem from="1555788811547" duration="4618000" />
+      <workItem from="1555788811547" duration="4818000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59444000" />
+    <option name="totallyTimeSpent" value="59644000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="7" y="23" width="1260" height="690" extended-state="0" />
@@ -758,18 +733,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BrowseSharp/www/api.html">
+    <entry file="file://$PROJECT_DIR$/BrowseSharp/www/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="35" column="0" lean-forward="true" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+        <state relative-caret-position="193">
+          <caret line="87" column="98" lean-forward="false" selection-start-line="87" selection-start-column="98" selection-end-line="87" selection-end-column="98" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BrowseSharp/www/index.html">
+    <entry file="file://$PROJECT_DIR$/BrowseSharp/www/api.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="87" column="98" lean-forward="false" selection-start-line="87" selection-start-column="98" selection-end-line="87" selection-end-column="98" />
+        <state relative-caret-position="-875">
+          <caret line="40" column="43" lean-forward="false" selection-start-line="40" selection-start-column="43" selection-end-line="40" selection-end-column="43" />
           <folding />
         </state>
       </provider>
