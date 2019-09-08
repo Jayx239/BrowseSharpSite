@@ -481,7 +481,7 @@
     {
       "name": "0.1.0",
       "displayName": "Version 0.1.0",
-      "notesHtml": "<p>Warning: This is a breaking change, upgrading will require existing projects to update their namespace references.</p><ul><li>Moved types into the new BrowseSharp.Common namespace</li><li>Made execute methods internal only:<ul><li>Execute</li><li>ExecuteAsGet</li><li>ExecuteAsPost</li><li>ExecuteTaskAsync</li><li>ExecuteGetTaskAsync</li><li>ExecutePostTaskAsync</li></ul></li></ul>",
+      "notesHtml": "<div class=\"alert alert-danger\">This package is broken on nuget</div><p>Warning: This is a breaking change, upgrading will require existing projects to update their namespace references.</p><ul><li>Moved types into the new BrowseSharp.Common namespace</li><li>Made execute methods internal only:<ul><li>Execute</li><li>ExecuteAsGet</li><li>ExecuteAsPost</li><li>ExecuteTaskAsync</li><li>ExecuteGetTaskAsync</li><li>ExecutePostTaskAsync</li></ul></li></ul>",
       "downloadLinks": [
         {
           "name": "GitHub",
