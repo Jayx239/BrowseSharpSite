@@ -18,7 +18,8 @@ var documentList = {
     "0.0.8-alpha": "BrowseSharp008a.xml",
     "0.0.8-beta": "BrowseSharp008b.xml",
     "0.0.8": "BrowseSharp008.xml",
-	"0.1.0": "BrowseSharp010.xml"
+    "0.1.0": "BrowseSharp010.xml",
+    "0.1.1-alpha": "BrowseSharp011a.xml"
 };
 
 

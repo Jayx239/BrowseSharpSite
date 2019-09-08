@@ -339,7 +339,8 @@
           "url": "https://www.nuget.org/packages/BrowseSharp/0.0.6"
         }
       ]
-    },{
+    },
+    {
       "name": "0.0.7-alpha",
       "displayName": "Version 0.0.7-alpha",
       "notesHtml": "<ul><li>Added target frameworks for .net 4.5.2 and .net 4.6</li></ul>",
@@ -361,7 +362,8 @@
           "url": "https://www.nuget.org/packages/BrowseSharp/0.0.7-alpha"
         }
       ]
-    },{
+    },
+    {
       "name": "0.0.7-beta",
       "displayName": "Version 0.0.7-beta",
       "notesHtml": "<ul><li>Fixed bug with target frameworks 4.5.2 and 4.6<ul><li>Needed to setup ServicePointManager.SecurityProtocol configuration.</li></ul></li></ul>",
@@ -383,7 +385,8 @@
           "url": "https://www.nuget.org/packages/BrowseSharp/0.0.7-beta"
         }
       ]
-    },{
+    },
+    {
       "name": "0.0.7",
       "displayName": "Version 0.0.7",
       "notesHtml": "<ul><li>Added target frameworks 4.5.2 and 4.6</li><li>Updated RestSharp package to 106.5.4</li></ul>",
@@ -405,7 +408,8 @@
           "url": "https://www.nuget.org/packages/BrowseSharp/0.0.7"
         }
       ]
-    },{
+    },
+    {
       "name": "0.0.8-alpha",
       "displayName": "Version 0.0.8-alpha",
       "notesHtml": "<ul><li>Added BrowserThreadSafe<ul><li>Ensures that async calls will execute successfully one at a time</li><li>Maintains same functionality as base Browser</li></ul></li></ul>",
@@ -427,7 +431,8 @@
           "url": "https://www.nuget.org/packages/BrowseSharp/0.0.8-alpha"
         }
       ]
-    },{
+    },
+    {
       "name": "0.0.8-beta",
       "displayName": "Version 0.0.8-beta",
       "notesHtml": "<ul><li>Fixed bug with UriHelper that was causing certain relative uri paths to not be constructed properly. Lead to certain external Javascript/Css styles to not be retrieved properly.</li><li>Removed direct manipulation of AngleSharp object in Javascript Object.</li></ul>",
@@ -449,7 +454,8 @@
           "url": "https://www.nuget.org/packages/BrowseSharp/0.0.8-beta"
         }
       ]
-    },{
+    },
+    {
       "name": "0.0.8",
       "displayName": "Version 0.0.8",
       "notesHtml": "<ul><li>Added BrowserThreadSafe<ul><li>Ensures that async calls will execute successfully one at a time</li><li>Maintains same functionality as base Browser</li></ul></li><li>Fixed bug with UriHelper that was causing certain relative uri paths to not be constructed properly. Lead to certain external Javascript/Css styles to not be retrieved properly.</li><li>Removed direct manipulation of AngleSharp object in Javascript Object.</li><li>Removed logic that set SecurityProtocol in the BrowserCore that was causing issues with .net core<ul><li>See <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load issue title\" data-id=\"433790620\" data-permission-text=\"Issue title is private\" data-url=\"https://github.com/Jayx239/BrowseSharp/issues/62\" data-hovercard-type=\"issue\" data-hovercard-url=\"/Jayx239/BrowseSharp/issues/62/hovercard\" href=\"https://github.com/Jayx239/BrowseSharp/issues/62\">#62</a></li></ul></li></ul>",
@@ -471,7 +477,8 @@
           "url": "https://www.nuget.org/packages/BrowseSharp/0.0.8"
         }
       ]
-    },{
+    },
+    {
       "name": "0.1.0",
       "displayName": "Version 0.1.0",
       "notesHtml": "<p>Warning: This is a breaking change, upgrading will require existing projects to update their namespace references.</p><ul><li>Moved types into the new BrowseSharp.Common namespace</li><li>Made execute methods internal only:<ul><li>Execute</li><li>ExecuteAsGet</li><li>ExecuteAsPost</li><li>ExecuteTaskAsync</li><li>ExecuteGetTaskAsync</li><li>ExecutePostTaskAsync</li></ul></li></ul>",
@@ -491,6 +498,29 @@
           "displayText": "Nuget",
           "useImage": "true",
           "url": "https://www.nuget.org/packages/BrowseSharp/0.1.0"
+        }
+      ]
+    },
+    {
+      "name": "0.1.1-alpha",
+      "displayName": "Version 0.1.1-alpha",
+      "notesHtml": "<p>Warning: This is a breaking change, upgrading will require existing projects to update their namespace references.<br>Note: This package now uses BrowseSharp.Common (See <a href=\"https://www.nuget.org/packages/BrowseSharp.Common/0.1.1-alpha\" rel=\"nofollow\">https://www.nuget.org/packages/BrowseSharp.Common/0.1.1-alpha</a>).</p><ul><li>Moved types into the new BrowseSharp.Common namespace</li><li>Made execute methods internal only:<ul><li>Execute</li><li>ExecuteAsGet</li><li>ExecuteAsPost</li><li>ExecuteTaskAsync</li><li>ExecuteGetTaskAsync</li><li>ExecutePostTaskAsync</li></ul></li></ul>",
+      "downloadLinks": [
+        {
+          "name": "GitHub",
+          "imgUrl": "img/GitHub_Logo.png",
+          "class": "github",
+          "displayText": "GitHub",
+          "useImage": "true",
+          "url": "https://github.com/Jayx239/BrowseSharp/tree/0.1.1-alpha"
+        },
+        {
+          "name": "Nuget",
+          "imgUrl": "img/nuget-logo.svg",
+          "class": "nuget",
+          "displayText": "Nuget",
+          "useImage": "true",
+          "url": "https://www.nuget.org/packages/BrowseSharp/0.1.1-alpha"
         }
       ]
     }
