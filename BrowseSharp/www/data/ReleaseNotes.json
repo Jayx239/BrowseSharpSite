@@ -523,6 +523,29 @@
           "url": "https://www.nuget.org/packages/BrowseSharp/0.1.1-alpha"
         }
       ]
+    },
+    {
+      "name": "0.1.1-beta",
+      "displayName": "Version 0.1.1-beta",
+      "notesHtml": "<p>Updated AngleSharp package to latest stable</p>",
+      "downloadLinks": [
+        {
+          "name": "GitHub",
+          "imgUrl": "img/GitHub_Logo.png",
+          "class": "github",
+          "displayText": "GitHub",
+          "useImage": "true",
+          "url": "https://github.com/Jayx239/BrowseSharp/tree/0.1.1-beta"
+        },
+        {
+          "name": "Nuget",
+          "imgUrl": "img/nuget-logo.svg",
+          "class": "nuget",
+          "displayText": "Nuget",
+          "useImage": "true",
+          "url": "https://www.nuget.org/packages/BrowseSharp/0.1.1-beta"
+        }
+      ]
     }
   ]
 }
