@@ -546,6 +546,29 @@
           "url": "https://www.nuget.org/packages/BrowseSharp/0.1.1-beta"
         }
       ]
+    },
+    {
+      "name": "0.1.1",
+      "displayName": "Version 0.1.1",
+      "notesHtml": "<p>Warning: This is a breaking change, upgrading from 0.0.8 will require existing projects to update their namespace references.</p><ul><li>Moved types into the new BrowseSharp.Common namespace</li><li>Made execute methods internal only:<ul><li>Execute</li><li>ExecuteAsGet</li><li>ExecuteAsPost</li><li>ExecuteTaskAsync</li><li>ExecuteGetTaskAsync</li><li>ExecutePostTaskAsync</li></ul></li></ul>",
+      "downloadLinks": [
+        {
+          "name": "GitHub",
+          "imgUrl": "img/GitHub_Logo.png",
+          "class": "github",
+          "displayText": "GitHub",
+          "useImage": "true",
+          "url": "https://github.com/Jayx239/BrowseSharp/tree/0.1.1"
+        },
+        {
+          "name": "Nuget",
+          "imgUrl": "img/nuget-logo.svg",
+          "class": "nuget",
+          "displayText": "Nuget",
+          "useImage": "true",
+          "url": "https://www.nuget.org/packages/BrowseSharp/0.1.1"
+        }
+      ]
     }
   ]
 }
