@@ -569,6 +569,29 @@
           "url": "https://www.nuget.org/packages/BrowseSharp/0.1.1"
         }
       ]
+    },
+    {
+      "name": "0.1.2-alpha",
+      "displayName": "Version 0.1.2-alpha",
+      "notesHtml": "<ul><li>Optimization with UriHelper.GetUri method</li><li>Updated form to parse values of form fields on initialization</li></ul>",
+      "downloadLinks": [
+        {
+          "name": "GitHub",
+          "imgUrl": "img/GitHub_Logo.png",
+          "class": "github",
+          "displayText": "GitHub",
+          "useImage": "true",
+          "url": "https://github.com/Jayx239/BrowseSharp/tree/0.1.2-alpha"
+        },
+        {
+          "name": "Nuget",
+          "imgUrl": "img/nuget-logo.svg",
+          "class": "nuget",
+          "displayText": "Nuget",
+          "useImage": "true",
+          "url": "https://www.nuget.org/packages/BrowseSharp/0.1.2-alpha"
+        }
+      ]
     }
   ]
 }
